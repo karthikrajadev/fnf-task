@@ -1,0 +1,260 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.btn:disabled {
+    background-color: white;
+    opacity: .5 !important;
+}
+
+.btn-white {
+    background-color: #fff;
+}
+
+.btn-white:hover {
+    background-color: #eee;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.transparent-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.search-btn {
+    position: absolute;
+    right: 14px;
+    top: 6px;
+}
+
+.profile-dd .dropdown-toggle::after {
+    display: none;
+}
+
+.profile-circle {
+    color: white;
+    width: 30px;
+    height: 30px;
+    background: #17375E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+main {
+    min-height: calc(100vh - 160px);
+}
+
+section.banner {
+    background: url(./images/banner.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+
+    position: relative;
+}
+
+.banner .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .5;
+}
+
+.banner .container {
+    height: 100%;
+}
+
+.banner .container-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.profile-outer {
+    order: 1;
+}
+
+.swiperr-outer {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline>div {
+    border: 2px solid #17375E;
+    border-radius: 4px;
+    width: 50%;
+    text-align: center;
+    background: #ffffff;
+    color: #17375E;
+    padding: 4px;
+}
+
+.timeline>div.active {
+    background: #17375E;
+    color: #fff;
+}
+
+.timeline>span {
+    height: 20px;
+    width: 2px;
+    background-color: transparent;
+}
+
+.timeline>span.active {
+    background-color: #17375E;
+}
+
+img[alt='Product'] {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+select[aria-label="Quantity"] {
+    width: 140px;
+}
+
+select[aria-label="Quantity"]~div a {
+    margin-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.actions {
+    display: flex;
+}
+
+.fa-star {
+    color: rgb(173, 181, 189);
+    cursor: pointer;
+}
+
+.form-label {
+    margin-bottom: 2px;
+}
+
+.form-label,
+.form-control {
+    font-size: 14px;
+}
+
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:nth-child(n+3),
+.btn-group>:not(.btn-check)+.btn {
+    border-radius: inherit;
+}
+
+.p-form .btn-outline-primary {
+    border: none;
+}
+
+.cc i {
+    color: grey;
+}
+
+.section {
+    display: none;
+}
+
+footer {
+    background-color: #eee;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .profile-outer {
+        order: unset;
+        flex: 1;
+        justify-content: flex-end;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #payment.section .col-md-6:nth-child(2) {
+        margin-top: 16px;
+    }
+
+    .products .col-md-9 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .timeline {
+        flex-direction: row;
+    }
+
+    .timeline>div {
+        font-size: 12px;
+        padding: 2px 6px;
+        width: max-content;
+    }
+
+    .timeline>span {
+        height: 2px;
+        width: auto;
+        flex: 1;
+    }
+
+    .actions-outer {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .actions {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    select[aria-label="Quantity"]~div a {
+        margin-left: 6px;
+        font-size: 12px;
+
+    }
+
+}
